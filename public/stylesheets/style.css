@@ -1,8 +1,88 @@
+* {
+  box-sizing: border-box;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  text-decoration: none;
+  height: min-content;
+  font-size: 1.5em;
 }
+h1 {
+  color: white;
+  margin: 1em;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #00B7FF;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+
+}
+
+.links-container{
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container > * {
+  margin: 1em;
+
+
+}
+
+.message-container {
+  border-bottom: 1px solid black;
+  max-width: 600px;
+}
+.body-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {max-width: 1000px;
+  width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form > * {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+input[type='submit'] {
+ border: none;
+ background-color: #00B7FF;
+ color: white;
+ width: 10em;
+ padding: 1em;
+ cursor: pointer;
+}
+
+textarea{
+  height: 30em;
+  margin-top: 1em;
+}
+
+

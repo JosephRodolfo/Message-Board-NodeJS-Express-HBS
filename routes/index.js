@@ -3,26 +3,7 @@ var router = express.Router();
 
 const messages = {
   messages: [
-    {
-      text: "Hi there!",
-      user: "Amando",
-      added: new Date(),
-    },
-    {
-      text: "Hello World!",
-      user: "Charles",
-      added: new Date(),
-    },
-    {
-      text: "Howdy!",
-      user: "Cowboy Dan",
-      added: new Date(),
-    },
-    {
-      text: "Howdy!",
-      user: "Cowboy Dan",
-      added: new Date(),
-    },
+
   ],
 };
 
@@ -37,6 +18,7 @@ router.get("/new", (req, res) => {
 });
 
 router.post("/new", (req, res) => {
+
   const { user, text } = req.body;
   messages.messages.push({ user: user, text: text, added: new Date() });
 
